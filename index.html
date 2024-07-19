@@ -20,6 +20,7 @@
         .image-container {
             display: flex;
             gap: 20px; /* Abstand zwischen den Bildern vergrößern */
+            margin-bottom: 20px; /* Abstand zwischen den Bildreihen */
         }
         .image-item {
             text-align: center;
@@ -36,10 +37,28 @@
             font-size: 14px;
             color: #555;
         }
+        .large-image-container {
+            width: 100%; /* Anpassung der Containerbreite */
+            max-width: 1500px; /* Vergrößerung der Maximalbreite für das große Bild */
+            margin-top: 20px;
+            text-align: center;
+        }
+        .large-image-container img {
+            width: 100%; /* Bild nimmt die gesamte Breite des Containers ein */
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
     <h1>Automatisierte Erkennung versiegelter Flächen aus Fernerkundungsdaten mit KI-Methoden (Deep Learning) für Witten</h1>
+  <h4>
+    ADOIS (Kreis Recklinghausen & Westfälische Hochschule Gelsenkirchen): https://github.com/geospaitial-lab/adois; Klassifizierung erfolgt auf Versiegelungsdaten der ELE
+  </h4>
+  <h5>
+    https://www.webgis-re.de/cms/fileadmin/user_upload/artikel_wie_eine_maschine_versiegelungskarten_erstellt_aus_vdvmagazin_3_23.pdf
+  </h5>
     <div class="image-container">
         <div class="image-item">
             <img src="https://cdn.glitch.global/42ed30c9-18be-4791-b376-407f506c7e92/Bildschirmfoto%202024-07-19%20um%2015.49.41.png?v=1721397701553" alt="Luftbild">
@@ -53,6 +72,24 @@
             <img src="https://cdn.glitch.global/42ed30c9-18be-4791-b376-407f506c7e92/Bildschirmfoto%202024-07-19%20um%2015.50.23.png?v=1721397685443" alt="Straßen">
             <div class="image-caption">Straßen</div>
         </div>
+    </div>
+    <div class="image-container">
+        <div class="image-item">
+            <img src="https://cdn.glitch.global/42ed30c9-18be-4791-b376-407f506c7e92/Bildschirmfoto%202024-07-19%20um%2015.51.34.png?v=1721397668413" alt="Bild 4">
+            <div class="image-caption">Ausschnitt</div>
+        </div>
+        <div class="image-item">
+            <img src="https://cdn.glitch.global/42ed30c9-18be-4791-b376-407f506c7e92/Bildschirmfoto%202024-07-19%20um%2015.52.00.png?v=1721397657193" alt="Bild 5">
+            <div class="image-caption">Häuser</div>
+        </div>
+        <div class="image-item">
+            <img src="https://cdn.glitch.global/42ed30c9-18be-4791-b376-407f506c7e92/Bildschirmfoto%202024-07-19%20um%2015.53.23.png?v=1721397648672" alt="Bild 6">
+            <div class="image-caption">Straßen</div>
+        </div>
+    </div>
+    <div class="large-image-container">
+        <h1>Mit regelmäßiger Ableitungen von Luftbildern lässt sich der Zuwachs an Versiegelung feststellen</h1>
+        <img src="https://cdn.glitch.global/42ed30c9-18be-4791-b376-407f506c7e92/Bildschirmfoto%202024-07-19%20um%2015.58.23.png?v=1721397645920" alt="Großes Bild">
     </div>
 </body>
 </html>
